@@ -1,0 +1,23 @@
+<html>
+<head><title>Canvas Zoom Example</title></head>
+<body>
+<h1>Fake Crime Scene Example</h1>
+<p>
+	<canvas id="zoomCanvas" width="800" height="400">You need a browser with the HTML5 Canvas ability.</canvas><br/>
+
+	<input type="button" value="Zoom in" onclick="galaxy.zoomInCentre()"/>
+	<input type="button" value="Zoom out" onclick="galaxy.zoomOutCentre()"/>
+
+	
+
+
+</p>
+</body>
+<foot>
+	<script type="text/javascript" src="imageloader.min.js"></script>
+	<script type="text/javascript" src="canvaszoom.min.js"></script>
+	<script type="text/javascript">
+      		var galaxy = new CanvasZoom( document.getElementById('zoomCanvas'), "fs", 15000,5497 );
+	</script>
+</foot>
+</html>
